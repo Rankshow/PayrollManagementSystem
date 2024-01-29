@@ -1,0 +1,12 @@
+C:\Users\User\source\repos\PayrollManagementSystem\PayrollManagementSystem.Core\bin\Debug\net7.0\PayrollManagementSystem.Core.deps.json
+C:\Users\User\source\repos\PayrollManagementSystem\PayrollManagementSystem.Core\bin\Debug\net7.0\PayrollManagementSystem.Core.dll
+C:\Users\User\source\repos\PayrollManagementSystem\PayrollManagementSystem.Core\bin\Debug\net7.0\PayrollManagementSystem.Core.pdb
+C:\Users\User\source\repos\PayrollManagementSystem\PayrollManagementSystem.Core\obj\Debug\net7.0\PayrollManagementSystem.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\PayrollManagementSystem\PayrollManagementSystem.Core\obj\Debug\net7.0\PayrollManagementSystem.Core.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\PayrollManagementSystem\PayrollManagementSystem.Core\obj\Debug\net7.0\PayrollManagementSystem.Core.AssemblyInfo.cs
+C:\Users\User\source\repos\PayrollManagementSystem\PayrollManagementSystem.Core\obj\Debug\net7.0\PayrollManagementSystem.Core.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\PayrollManagementSystem\PayrollManagementSystem.Core\obj\Debug\net7.0\PayrollManagementSystem.Core.dll
+C:\Users\User\source\repos\PayrollManagementSystem\PayrollManagementSystem.Core\obj\Debug\net7.0\refint\PayrollManagementSystem.Core.dll
+C:\Users\User\source\repos\PayrollManagementSystem\PayrollManagementSystem.Core\obj\Debug\net7.0\PayrollManagementSystem.Core.pdb
+C:\Users\User\source\repos\PayrollManagementSystem\PayrollManagementSystem.Core\obj\Debug\net7.0\ref\PayrollManagementSystem.Core.dll
+C:\Users\User\source\repos\PayrollManagementSystem\PayrollManagementSystem.Core\obj\Debug\net7.0\PayrollManagementSystem.Core.sourcelink.json
