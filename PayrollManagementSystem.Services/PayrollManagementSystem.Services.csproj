@@ -10,4 +10,8 @@
     <ProjectReference Include="..\PayrollManagementSystem.Repositories\PayrollManagementSystem.Repositories.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Contracts\Salary\" />
+  </ItemGroup>
+
 </Project>

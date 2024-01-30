@@ -21,6 +21,7 @@ namespace PayrollManagementSystem.Presentation.Controllers
         public async Task<ActionResult<BaseResponse>> Create(
             [FromBody]EmployeeCreateReq req) 
         {
+            _logger.LogInformation("Executing Add employee");
             return await _employeeService.Create(req);
         }
 
