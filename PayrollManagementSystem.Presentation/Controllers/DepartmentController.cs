@@ -12,7 +12,8 @@ namespace PayrollManagementSystem.Presentation.Controllers
     {
         private readonly IDepartmentService _departmentService;
         private readonly ILogger<DepartmentController> _logger;
-        public DepartmentController(IDepartmentService departmentService, ILogger<DepartmentController> logger)
+        public DepartmentController(IDepartmentService departmentService, 
+            ILogger<DepartmentController> logger)
         {
             _logger = logger;
             _departmentService = departmentService;

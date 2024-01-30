@@ -55,7 +55,7 @@ namespace PayrollManagementSystem.Repositories.Migrations
 
                     b.HasKey("DepartmentId");
 
-                    b.ToTable("Departments");
+                    b.ToTable("Departments", (string)null);
                 });
 
             modelBuilder.Entity("PayrollManagementSystem.Core.Entities.Employee", b =>
@@ -107,7 +107,7 @@ namespace PayrollManagementSystem.Repositories.Migrations
 
                     b.HasIndex("DepartmentId");
 
-                    b.ToTable("Employees");
+                    b.ToTable("Employees", (string)null);
                 });
 
             modelBuilder.Entity("PayrollManagementSystem.Core.Entities.Leave", b =>
@@ -144,7 +144,7 @@ namespace PayrollManagementSystem.Repositories.Migrations
 
                     b.HasIndex("EmployeeId");
 
-                    b.ToTable("Leaves");
+                    b.ToTable("Leaves", (string)null);
                 });
 
             modelBuilder.Entity("PayrollManagementSystem.Core.Entities.Payroll", b =>
@@ -185,7 +185,7 @@ namespace PayrollManagementSystem.Repositories.Migrations
 
                     b.HasKey("PayrollId");
 
-                    b.ToTable("Payrolls");
+                    b.ToTable("Payrolls", (string)null);
                 });
 
             modelBuilder.Entity("PayrollManagementSystem.Core.Entities.Salary", b =>
@@ -222,7 +222,7 @@ namespace PayrollManagementSystem.Repositories.Migrations
                     b.HasIndex("EmployeeId")
                         .IsUnique();
 
-                    b.ToTable("Salaries");
+                    b.ToTable("Salaries", (string)null);
                 });
 
             modelBuilder.Entity("PayrollManagementSystem.Core.Entities.Employee", b =>

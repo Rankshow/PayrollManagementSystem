@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PayrollManagementSystem.Presentation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+babb5c8a8cc0b3837e62c97df5e98978727a8c64")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb3d64d741439717ae13ebdfc3760c77feb55272")]
 [assembly: System.Reflection.AssemblyProductAttribute("PayrollManagementSystem.Presentation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PayrollManagementSystem.Presentation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
