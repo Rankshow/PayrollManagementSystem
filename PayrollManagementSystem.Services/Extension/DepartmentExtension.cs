@@ -37,5 +37,15 @@ namespace PayrollManagementSystem.Services.Extension
             }
             return departmentDtos;  
         }
+
+        public static Department AsEntity(this DepartmentUpdateReq req)
+        {
+            return new Department
+            {
+                DepartmentId = req.DepartmentId,
+                Name = req.Name,    
+                Description = req.Description,
+            };
+        }
     }
 }

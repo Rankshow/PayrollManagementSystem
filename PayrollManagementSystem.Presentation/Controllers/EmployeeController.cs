@@ -38,7 +38,7 @@ namespace PayrollManagementSystem.Presentation.Controllers
         }
         [HttpPut]
         public async Task<ActionResult<BaseResponse>> Update(
-            [FromRoute]Guid EmployeeId, 
+            [FromRoute]Guid employeeId, 
             [FromBody]EmployeeUpdateReq req)
         {
             return await _employeeService.Update(req);
@@ -49,5 +49,6 @@ namespace PayrollManagementSystem.Presentation.Controllers
         {
             return await _employeeService.Delete(employeeId);
         }
+
     }
 }

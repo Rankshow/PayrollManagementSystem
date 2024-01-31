@@ -30,6 +30,25 @@ namespace PayrollManagementSystem.Presentation.Controllers
             _logger.LogInformation("Executing all deepartments");
             return await _departmentService.GetAll();
         }
+        [HttpDelete]
+        [Route("{departmentId}")]
+        public async Task<ActionResult<BaseResponse>> Delete(Guid departmentId)
+        {
+            return await _departmentService.Delete(departmentId);
+        }
+        [HttpGet]
+        [Route("departmentId")]
+        public async Task<ActionResult<BaseResponse>> GetById(Guid departmentId)
+        {
+            return await _departmentService.GetById(departmentId);
+        }
+        [HttpPut]
+        public async Task<ActionResult<BaseResponse>> Update(
+            [FromRoute]Guid departmentId,
+            [FromBody]DepartmentUpdateReq req)
+        {
+            return await _departmentService.Update(req);
+        }
     }
 }
 

@@ -39,9 +39,6 @@ namespace PayrollManagementSystem.Repositories.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("EmployeeId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("ModifiedBy")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -55,7 +52,7 @@ namespace PayrollManagementSystem.Repositories.Migrations
 
                     b.HasKey("DepartmentId");
 
-                    b.ToTable("Departments", (string)null);
+                    b.ToTable("Departments");
                 });
 
             modelBuilder.Entity("PayrollManagementSystem.Core.Entities.Employee", b =>
@@ -107,7 +104,7 @@ namespace PayrollManagementSystem.Repositories.Migrations
 
                     b.HasIndex("DepartmentId");
 
-                    b.ToTable("Employees", (string)null);
+                    b.ToTable("Employees");
                 });
 
             modelBuilder.Entity("PayrollManagementSystem.Core.Entities.Leave", b =>
@@ -144,7 +141,7 @@ namespace PayrollManagementSystem.Repositories.Migrations
 
                     b.HasIndex("EmployeeId");
 
-                    b.ToTable("Leaves", (string)null);
+                    b.ToTable("Leaves");
                 });
 
             modelBuilder.Entity("PayrollManagementSystem.Core.Entities.Payroll", b =>
@@ -185,7 +182,7 @@ namespace PayrollManagementSystem.Repositories.Migrations
 
                     b.HasKey("PayrollId");
 
-                    b.ToTable("Payrolls", (string)null);
+                    b.ToTable("Payrolls");
                 });
 
             modelBuilder.Entity("PayrollManagementSystem.Core.Entities.Salary", b =>
@@ -222,7 +219,7 @@ namespace PayrollManagementSystem.Repositories.Migrations
                     b.HasIndex("EmployeeId")
                         .IsUnique();
 
-                    b.ToTable("Salaries", (string)null);
+                    b.ToTable("Salaries");
                 });
 
             modelBuilder.Entity("PayrollManagementSystem.Core.Entities.Employee", b =>
