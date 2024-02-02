@@ -1,7 +1,9 @@
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using PayrollManagementSystem.Core.Interfaces;
 using PayrollManagementSystem.Repositories.Data;
 using PayrollManagementSystem.Repositories.Implementations;
+using PayrollManagementSystem.Services.Contracts.Employee;
 using PayrollManagementSystem.Services.Implentations;
 using PayrollManagementSystem.Services.Interfaces;
 
@@ -18,6 +20,7 @@ builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
 builder.Services.AddScoped<IDepartmentService, DepartmentService>();
+builder.Services.AddScoped<IValidator<EmployeeCreateReq>, EmployeeCreateReqValidator>();
 
 
 builder.Services.AddControllers();

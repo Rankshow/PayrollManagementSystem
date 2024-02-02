@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using FluentValidation;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PayrollManagementSystem.Services.Contracts.Employee;
 using PayrollManagementSystem.Services.Interfaces;
@@ -11,19 +12,28 @@ namespace PayrollManagementSystem.Presentation.Controllers
     {
         private readonly ILogger<EmployeeController> _logger;   
         private readonly IEmployeeService _employeeService;
-        public EmployeeController(IEmployeeService employeeService, ILogger<EmployeeController> logger)
+        private readonly IValidator<EmployeeCreateReq> _validator;
+        public EmployeeController(IEmployeeService employeeService, IValidator<EmployeeCreateReq> validator , ILogger<EmployeeController> logger)
         {
             _logger = logger;
             _employeeService = employeeService;
+            _validator = validator;
         }
 
         [HttpPost]
         public async Task<ActionResult<BaseResponse>> Create(
             [FromBody]EmployeeCreateReq req) 
         {
-            _logger.LogInformation("Executing Add employee");
+            
+            var validatorCheck = _validator.Validate(req);
+
+            if (!validatorCheck.IsValid) 
+            {
+                return BadRequest(validatorCheck);
+            }
+
             return await _employeeService.Create(req);
-        }
+           }
 
         [HttpGet]
         public async Task<ActionResult<BaseResponse>> GetAll() 

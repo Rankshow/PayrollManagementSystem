@@ -65,8 +65,8 @@ namespace PayrollManagementSystem.Repositories.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<float>("Age")
-                        .HasColumnType("real");
+                    b.Property<int>("Age")
+                        .HasColumnType("int");
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
@@ -97,8 +97,9 @@ namespace PayrollManagementSystem.Repositories.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("PhoneNumber")
-                        .HasColumnType("float");
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("EmployeeId");
 

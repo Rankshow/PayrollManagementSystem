@@ -81,3 +81,4 @@ C:\Users\User\source\repos\PayrollManagementSystem\PayrollManagementSystem.Prese
 C:\Users\User\source\repos\PayrollManagementSystem\PayrollManagementSystem.Presentation\bin\Debug\net7.0\PayrollManagementSystem.Core.pdb
 C:\Users\User\source\repos\PayrollManagementSystem\PayrollManagementSystem.Presentation\bin\Debug\net7.0\PayrollManagementSystem.Repositories.pdb
 C:\Users\User\source\repos\PayrollManagementSystem\PayrollManagementSystem.Presentation\obj\Debug\net7.0\PayrollManagementSystem.Presentation.sourcelink.json
+C:\Users\User\source\repos\PayrollManagementSystem\PayrollManagementSystem.Presentation\bin\Debug\net7.0\FluentValidation.dll
