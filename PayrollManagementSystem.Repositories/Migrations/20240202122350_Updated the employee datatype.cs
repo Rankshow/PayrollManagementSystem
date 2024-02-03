@@ -11,7 +11,7 @@ namespace PayrollManagementSystem.Repositories.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterColumn<string>(
-                name: "PhoneNumber",
+                name: "PhoneNumber",   
                 table: "Employees",
                 type: "nvarchar(max)",
                 nullable: false,

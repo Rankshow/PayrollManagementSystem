@@ -19,6 +19,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PayrollManagementSystem.Rep
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PayrollManagementSystem.Services", "PayrollManagementSystem.Services\PayrollManagementSystem.Services.csproj", "{415D0C27-26CB-47DA-A2B2-F4C7C90C0B66}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{64EABBBE-6C65-4777-B056-73E62137FF53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayrollManagementSystem.UnitTest", "PayrollManagementSystem.UnitTest\PayrollManagementSystem.UnitTest.csproj", "{6B83EB08-7D9D-41EC-9385-2E61064C8205}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,10 @@ Global
 		{415D0C27-26CB-47DA-A2B2-F4C7C90C0B66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{415D0C27-26CB-47DA-A2B2-F4C7C90C0B66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{415D0C27-26CB-47DA-A2B2-F4C7C90C0B66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B83EB08-7D9D-41EC-9385-2E61064C8205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B83EB08-7D9D-41EC-9385-2E61064C8205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B83EB08-7D9D-41EC-9385-2E61064C8205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B83EB08-7D9D-41EC-9385-2E61064C8205}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +58,7 @@ Global
 		{7D10923D-0A2E-40EE-9DDB-63F272F24F0C} = {5B7C5DD8-51B5-466F-854F-D65FC1F02D5D}
 		{85C591E2-C913-4CAF-BFFF-37FA01EA4F07} = {1357D0B5-8B8F-420C-94E8-1536D4D6ADF0}
 		{415D0C27-26CB-47DA-A2B2-F4C7C90C0B66} = {67373D0F-D8A2-44B9-958B-4C4D4992758B}
+		{6B83EB08-7D9D-41EC-9385-2E61064C8205} = {64EABBBE-6C65-4777-B056-73E62137FF53}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3DFFACFE-EE4E-4203-8D7D-47BBEE0F825E}
