@@ -7,7 +7,7 @@ namespace PayrollManagementSystem.UnitTest.Validators
     
     public class EmployeeCreateReqValidatorTest
     {
-        private EmployeeCreateReqValidator _validator;
+        private readonly EmployeeCreateReqValidator _validator;
         public EmployeeCreateReqValidatorTest()
         {      
             _validator = new EmployeeCreateReqValidator();  
