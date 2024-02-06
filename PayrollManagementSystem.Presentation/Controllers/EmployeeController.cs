@@ -1,5 +1,4 @@
 ﻿using FluentValidation;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PayrollManagementSystem.Services.Contracts.Employee;
 using PayrollManagementSystem.Services.Interfaces;
@@ -14,17 +13,17 @@ namespace PayrollManagementSystem.Presentation.Controllers
         private readonly IEmployeeService _employeeService;
         private readonly IValidator<EmployeeCreateReq> _validator;
         public EmployeeController(IEmployeeService employeeService, IValidator<EmployeeCreateReq> validator , ILogger<EmployeeController> logger)
-        {
+        { 
             _logger = logger;
             _employeeService = employeeService;
             _validator = validator;
         }
 
         [HttpPost]
-        public async Task<ActionResult<BaseResponse>> Create(
+        public ActionResult<BaseResponse> Create(
             [FromBody]EmployeeCreateReq req) 
         {
-            
+         
             var validatorCheck = _validator.Validate(req);
 
             if (!validatorCheck.IsValid) 
@@ -32,7 +31,7 @@ namespace PayrollManagementSystem.Presentation.Controllers
                 return BadRequest(validatorCheck);
             }
 
-            return await _employeeService.Create(req);
+            return Ok(_employeeService.Create(req));
            }
 
         [HttpGet]

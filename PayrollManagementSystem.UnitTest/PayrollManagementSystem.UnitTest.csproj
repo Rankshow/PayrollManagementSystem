@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.9.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
     <PackageReference Include="Moq" Version="4.20.70" />
@@ -23,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\PayrollManagementSystem.Presentation\PayrollManagementSystem.Presentation.csproj" />
     <ProjectReference Include="..\PayrollManagementSystem.Services\PayrollManagementSystem.Services.csproj" />
   </ItemGroup>
 
