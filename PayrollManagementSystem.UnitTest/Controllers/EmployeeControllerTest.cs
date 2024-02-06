@@ -73,6 +73,7 @@ namespace PayrollManagementSystem.UnitTest.Controllers
                 }
             });
 
+            //passing our Moq dependencies
             var employeeController = new EmployeeController(
                 _mockEmployeeService.Object,
                 _validator,
