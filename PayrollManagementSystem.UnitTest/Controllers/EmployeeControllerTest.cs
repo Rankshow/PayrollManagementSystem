@@ -59,5 +59,41 @@ namespace PayrollManagementSystem.UnitTest.Controllers
             //Assert
             result.ShouldBeOfType<ActionResult<BaseResponse>>();
         }
+        [Fact]
+        public void EmployeeCreate_InValidInput_ShouldFail()
+        {
+            //Arrange
+            _mockEmployeeService.Setup(m => m.Create(It.IsAny<EmployeeCreateReq>()))
+            .Returns(new EmployeeRsp<EmployeeDto>
+            {
+                Code = "200",
+                Result = new EmployeeDto
+                {
+                    
+                }
+            });
+
+            var employeeController = new EmployeeController(
+                _mockEmployeeService.Object,
+                _validator,
+                _mockLoggerService.Object
+                );
+
+            var employeeReq = new EmployeeCreateReq
+            {
+                Name = "",
+                Gender = "Male",
+                Address = "Flick Avenue",
+                Email = "ranag@gmail.com",
+                PhoneNumber = "+234848849392",
+                Age = 20                    
+            };
+            //Act
+            var result = employeeController.Create(employeeReq);
+
+            //Assert
+            result.ShouldBeOfType<ActionResult<BaseResponse>>();
+            (result as ActionResult<BaseResponse>).ShouldNotBeAssignableTo<Ok>();
+        }
     }
 }
