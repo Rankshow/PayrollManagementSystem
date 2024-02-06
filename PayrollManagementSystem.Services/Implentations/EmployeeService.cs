@@ -12,10 +12,10 @@ namespace PayrollManagementSystem.Services.Implentations
         {
             _employeeRepository = employeeRepository;
         }
-        public async Task<EmployeeRsp<EmployeeDto>> Create(EmployeeCreateReq req)
+        public EmployeeRsp<EmployeeDto> Create(EmployeeCreateReq req)
         {
             var createdEmp = req.AsEntity();
-            await _employeeRepository.Create(createdEmp);
+            _employeeRepository.Create(createdEmp);
 
             return new EmployeeRsp<EmployeeDto>
             {
